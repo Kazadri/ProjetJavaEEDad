@@ -9,7 +9,8 @@
         <h:form>
             <h:outputLabel value="message : "/>
             <h:inputText value="#{messageModel.message}"/>
-            <h:commandButton value="Payer avec Soap" action="#{messageModel.doMessageWithSoap}"/>
+            <h:commandButton value="Simu avec Soap" action="#{messageModel.doMessageWithSoap}"/>
+            <h:commandButton value="Simu avec Rest" action="#{messageModel.doMessageWithRest}"/>
         </h:form>
     </h:body>
 </html>

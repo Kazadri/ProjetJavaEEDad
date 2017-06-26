@@ -18,7 +18,7 @@ endpointInterface = "com.crypt.messagemgmt.facade.MessageServiceEndpointInterfac
 portName = "MessagePort",
 serviceName = "MessageService"
 )
-public class MessagingServiceBean implements MessageServiceEndpointInterface {
+public class MessagingServiceBean implements MessageServiceEndpointInterface, MessageServiceRemote {
    @Override
    public Boolean verification(String message){
        if(message.length() > 0)

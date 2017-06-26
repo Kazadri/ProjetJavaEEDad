@@ -15,6 +15,7 @@ import javax.xml.ws.WebServiceRef;
  * @author kazadri
  */
 @Stateless
+@Soap
 public class SoapMessagesValidator implements MessageValidator {
     @WebServiceRef(MessageService.class)
     private MessagingEndpoint messaging;

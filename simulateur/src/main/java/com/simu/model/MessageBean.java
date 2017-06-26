@@ -6,6 +6,8 @@
 package com.simu.model;
 
 import com.simu.buisness.logic.MessageValidator;
+import com.simu.buisness.logic.Rest;
+import com.simu.buisness.logic.Soap;
 import javax.ejb.Stateless;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -20,11 +22,21 @@ import javax.inject.Named;
 public class MessageBean {
 
     private String message;
-    @Inject
+    @Inject @Soap
     private MessageValidator messageValidator;
+    @Inject @Rest
+    private MessageValidator restMessageValidator;
     
     public String doMessageWithSoap(){
         boolean isValid = messageValidator.send(message);
+        if(isValid){
+            return "valid";
+        }else{
+            return "invalid";
+        }
+    }
+    public String doMessageWithRest(){
+        boolean isValid = restMessageValidator.send(message);
         if(isValid){
             return "valid";
         }else{
