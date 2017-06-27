@@ -112,6 +112,24 @@
                         <id>wsimport-generate-MessagingServiceBean</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <wsdlFiles>
+                                <wsdlFile>10.162.128.20_15330/DecipherService/JmsBridge.svc.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageName>com.simu.buisness.logic</packageName>
+                            <vmArgs>
+                                <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                            </vmArgs>
+                            <wsdlLocation>http://10.162.128.20:15330/DecipherService/JmsBridge.svc?WSDL</wsdlLocation>
+                            <staleFile>${project.build.directory}/jaxws/stale/JmsBridge.svc.stale</staleFile>
+                        </configuration>
+                        <id>wsimport-generate-JmsBridge.svc</id>
+                        <phase>generate-sources</phase>
+                    </execution>
                 </executions>
                 <dependencies>
                     <dependency>
