@@ -108,7 +108,7 @@ public class MessageProcessor implements MessageListener {
                             }
                         }
                     }
-                    System.out.println(count);
+                    System.out.println(count/dividedMessage.length*100);
                     /**
                      * Sortie :
                      * - Information secrete (adresser mail)
