@@ -6,6 +6,7 @@
 package com.crypt.messagemgmt.facade;
 
 import java.io.StringWriter;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Resource;
@@ -42,14 +43,17 @@ public class MessagingServiceBean implements MessageServiceEndpointInterface, Me
         MessageDecrypt m = new MessageDecrypt();
        if(message.length() > 0){
            m.setsMessage(message);
-           sendPayment(m);
+           m.setKey("blabla");
+           m.setnFichier("test");
+           
+           sendMessage(m);
            return true;
        }else{
            return false;
        }
    }
     
-    private void sendPayment(MessageDecrypt message){
+    private void sendMessage(MessageDecrypt message){
         JAXBContext jaxbContext;
         try {
         //obtention d'une instance JAXBContext associée au type Payment annoté avec JAX-B
