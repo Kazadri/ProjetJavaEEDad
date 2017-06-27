@@ -108,7 +108,9 @@ public class MessageProcessor implements MessageListener {
                             }
                         }
                     }
-                    System.out.println(count/dividedMessage.length*100);
+                    Double pourc = Math.floor(((double)count / (double)dividedMessage.length) * 100);
+                    System.out.println(count);
+                    System.out.println(pourc+"%");
                     /**
                      * Sortie :
                      * - Information secrete (adresser mail)

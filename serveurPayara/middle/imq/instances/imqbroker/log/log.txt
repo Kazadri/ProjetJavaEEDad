@@ -1,0 +1,2566 @@
+[#|2017-06-26T15:04:29.590+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2017-06-26T15:04:29.600+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 2-c)
+Compile:  March 17 2015 1045
+
+Copyright (c) 2013, Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_131 Oracle Corporation /home/kazadri/Documents/javatools/jdk1.8.0_131/jre
+|#]
+
+
+[#|2017-06-26T15:04:29.669+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|   IMQ_HOME=/home/kazadri/Documents/javatools/payara41/mq
+|#]
+
+
+[#|2017-06-26T15:04:29.669+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|IMQ_VARHOME=/home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq
+|#]
+
+
+[#|2017-06-26T15:04:29.669+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|Linux 4.8.0-54-generic amd64 Ubuntu-Thibaut (4 cpu) kazadri
+|#]
+
+
+[#|2017-06-26T15:04:29.670+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|Java Heap Size: max=466432k, current=311808k
+|#]
+
+
+[#|2017-06-26T15:04:29.670+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|Arguments: -port 11076 -name imqbroker -nobind -imqhome /home/kazadri/Documents/javatools/payara41/mq -varhome /home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq -libhome /home/kazadri/Documents/javatools/payara41/mq/lib -useRmiRegistry -rmiRegistryPort 11086 -save -silent
+|#]
+
+
+[#|2017-06-26T15:04:29.671+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2017-06-26T15:04:29.671+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=11076, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=11086, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2017-06-26T15:04:29.671+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|Embedded Broker 
+|#]
+
+
+[#|2017-06-26T15:04:29.767+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1522]: Create thread pool portmapper for (4, 4)(60s) service
+|#]
+
+
+[#|2017-06-26T15:04:29.853+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2017-06-26T15:04:29.853+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2017-06-26T15:04:29.883+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2017-06-26T15:04:29.884+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|Using built-in file-based persistent store: /home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq/instances/imqbroker/
+|#]
+
+
+[#|2017-06-26T15:04:30.109+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|WARNING Existing file: incompleteTxnStorehas older cookie version than current version. Current version = 1. Original file version = 0
+|#]
+
+
+[#|2017-06-26T15:04:30.166+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2017-06-26T15:04:30.206+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|WARNING [B3168]: Invalid broker address for this broker to run in cluster: Loopback IP address is not allowed in broker address mq://127.0.1.1:11076/?instName=imqbroker&brokerSessionUID=3951729334525254400&ha=false for cluster
+|#]
+
+
+[#|2017-06-26T15:04:30.206+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|WARNING [B1137]: Cluster initialization failed. Disabling the cluster service.
+|#]
+
+
+[#|2017-06-26T15:04:30.211+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2017-06-26T15:04:30.243+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|new transaction log enabled
+|#]
+
+
+[#|2017-06-26T15:04:30.244+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|sync writes to disk = false
+|#]
+
+
+[#|2017-06-26T15:04:30.244+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2017-06-26T15:04:30.244+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2017-06-26T15:04:30.245+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1392]: Opening transaction log with file mode rw, maximum size 10 485 760 bytes
+|#]
+
+
+[#|2017-06-26T15:04:30.283+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2017-06-26T15:04:30.283+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2017-06-26T15:04:30.283+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2017-06-26T15:04:30.284+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1503]: Retrieved 0 destinations from store
+|#]
+
+
+[#|2017-06-26T15:04:30.285+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1144]: Creating Dead Message Queue
+|#]
+
+
+[#|2017-06-26T15:04:30.297+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1158]: Administrator has created destination mq.sys.dmq [Queue]
+|#]
+
+
+[#|2017-06-26T15:04:30.405+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2017-06-26T15:04:30.459+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://Ubuntu-Thibaut/jndi/rmi://Ubuntu-Thibaut:11086/Ubuntu-Thibaut/11076/jmxrmi
+|#]
+
+
+[#|2017-06-26T15:04:30.568+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2017-06-26T15:04:30.568+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2017-06-26T15:04:30.603+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2017-06-26T15:04:30.604+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2017-06-26T15:04:30.606+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2017-06-26T15:04:30.606+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2017-06-26T15:04:30.607+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2017-06-26T15:04:30.608+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2017-06-26T15:04:30.619+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=http-thread-pool::http-listener-1(2);|[B1039]: Broker "imqbroker@Ubuntu-Thibaut:11076" ready.
+|#]
+
+
+[#|2017-06-26T15:04:53.742+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=RMI TCP Connection(5)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  1, Count=1
+|#]
+
+
+[#|2017-06-26T15:04:53.803+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=RMI TCP Connection(5)-127.0.0.1;|JMX Connection Close: jmxrmi, connection ID: rmi://127.0.0.1  1, Count=0
+|#]
+
+
+[#|2017-06-26T15:10:01.207+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=http-thread-pool::http-listener-1(4);|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T15:10:01.470+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=http-thread-pool::http-listener-1(4);|[B1132]: Auto-creating destination physMessageQueue [Queue] 
+|#]
+
+
+[#|2017-06-26T15:10:24.839+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=197;_ThreadName=RMI TCP Connection(9)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  2, Count=1
+|#]
+
+
+[#|2017-06-26T15:10:24.842+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=197;_ThreadName=RMI TCP Connection(9)-127.0.0.1;|JMX Connection Close: jmxrmi, connection ID: rmi://127.0.0.1  2, Count=0
+|#]
+
+
+[#|2017-06-26T15:10:28.298+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=197;_ThreadName=RMI TCP Connection(9)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  3, Count=1
+|#]
+
+
+[#|2017-06-26T15:20:01.284+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=194;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-26T15:20:01.370+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=194;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T15:30:01.314+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=194;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-26T15:30:01.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=194;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T15:33:24.283+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=268;_ThreadName=RunLevelControllerThread-1498484002513;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-26T15:33:24.418+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1047]: Shutting down broker...[BrokerProcess:Thread[Thread-69,5,main]]
+|#]
+
+
+[#|2017-06-26T15:33:24.418+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1077]: Broadcast good-bye to all connections ...
+|#]
+
+
+[#|2017-06-26T15:33:24.418+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1078]: Flushing good-bye messages ...
+|#]
+
+
+[#|2017-06-26T15:33:24.418+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1007]: Stopping Service admin with protocol tcp(host = *, port=0, mode=dedicated)
+|#]
+
+
+[#|2017-06-26T15:33:24.419+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1007]: Stopping Service jmsdirect with protocol 
+|#]
+
+
+[#|2017-06-26T15:33:24.419+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1007]: Stopping Service mqdirect2 with protocol none
+|#]
+
+
+[#|2017-06-26T15:33:24.419+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1007]: Stopping Service jms with protocol tcp(host = *, port=0, mode=dedicated)
+|#]
+
+
+[#|2017-06-26T15:33:24.456+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|JMX Connection Close: jmxrmi, connection ID: rmi://127.0.0.1  3, Count=0
+|#]
+
+
+[#|2017-06-26T15:33:24.490+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|WARNING Caught exception when stopping JMX Connector Server jmxrmi:
+java.io.IOException: Cannot bind to URL: javax.naming.CommunicationException [Root exception is java.rmi.NoSuchObjectException: no such object in table]
+|#]
+
+
+[#|2017-06-26T15:33:24.490+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|WARNING [B2138]: Caught exception when stopping JMX Agent:
+java.io.IOException: Cannot bind to URL: javax.naming.CommunicationException [Root exception is java.rmi.NoSuchObjectException: no such object in table]
+|#]
+
+
+[#|2017-06-26T15:33:27.579+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=277;_ThreadName=Thread-69;|[B1048]: Shutdown of broker complete.
+|#]
+
+
+[#|2017-06-26T15:35:24.616+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2017-06-26T15:35:24.650+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 2-c)
+Compile:  March 17 2015 1045
+
+Copyright (c) 2013, Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_131 Oracle Corporation /home/kazadri/Documents/javatools/jdk1.8.0_131/jre
+|#]
+
+
+[#|2017-06-26T15:35:24.707+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|   IMQ_HOME=/home/kazadri/Documents/javatools/payara41/mq
+|#]
+
+
+[#|2017-06-26T15:35:24.708+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|IMQ_VARHOME=/home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq
+|#]
+
+
+[#|2017-06-26T15:35:24.708+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|Linux 4.8.0-54-generic amd64 Ubuntu-Thibaut (4 cpu) kazadri
+|#]
+
+
+[#|2017-06-26T15:35:24.710+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|Java Heap Size: max=466432k, current=282112k
+|#]
+
+
+[#|2017-06-26T15:35:24.710+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|Arguments: -port 11076 -name imqbroker -nobind -imqhome /home/kazadri/Documents/javatools/payara41/mq -varhome /home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq -libhome /home/kazadri/Documents/javatools/payara41/mq/lib -useRmiRegistry -rmiRegistryPort 11086 -save -silent
+|#]
+
+
+[#|2017-06-26T15:35:24.710+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2017-06-26T15:35:24.710+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=11076, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=11086, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2017-06-26T15:35:24.711+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|Embedded Broker 
+|#]
+
+
+[#|2017-06-26T15:35:24.769+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1522]: Create thread pool portmapper for (4, 4)(60s) service
+|#]
+
+
+[#|2017-06-26T15:35:24.907+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2017-06-26T15:35:24.908+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2017-06-26T15:35:24.924+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2017-06-26T15:35:24.925+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|Using built-in file-based persistent store: /home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq/instances/imqbroker/
+|#]
+
+
+[#|2017-06-26T15:35:25.296+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2017-06-26T15:35:25.331+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|WARNING [B3168]: Invalid broker address for this broker to run in cluster: Loopback IP address is not allowed in broker address mq://127.0.1.1:11076/?instName=imqbroker&brokerSessionUID=4410533547038505216&ha=false for cluster
+|#]
+
+
+[#|2017-06-26T15:35:25.331+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|WARNING [B1137]: Cluster initialization failed. Disabling the cluster service.
+|#]
+
+
+[#|2017-06-26T15:35:25.336+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2017-06-26T15:35:25.359+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|new transaction log enabled
+|#]
+
+
+[#|2017-06-26T15:35:25.360+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|sync writes to disk = false
+|#]
+
+
+[#|2017-06-26T15:35:25.360+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2017-06-26T15:35:25.360+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2017-06-26T15:35:25.360+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1392]: Opening transaction log with file mode rw, maximum size 10 485 760 bytes
+|#]
+
+
+[#|2017-06-26T15:35:25.388+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1270]: Processing messages from transaction log file...
+|#]
+
+
+[#|2017-06-26T15:35:25.389+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2017-06-26T15:35:25.390+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1503]: Retrieved 2 destinations from store
+|#]
+
+
+[#|2017-06-26T15:35:25.430+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1151]: Loading destination mq.sys.dmq [Queue] with 0 messages
+|#]
+
+
+[#|2017-06-26T15:35:25.431+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1152]: Loading of destination mq.sys.dmq [Queue] complete
+|#]
+
+
+[#|2017-06-26T15:35:25.446+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1151]: Loading destination physMessageQueue [Queue] with 1 messages
+|#]
+
+
+[#|2017-06-26T15:35:25.452+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1152]: Loading of destination physMessageQueue [Queue] complete
+|#]
+
+
+[#|2017-06-26T15:35:25.454+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2017-06-26T15:35:25.454+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2017-06-26T15:35:25.487+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2017-06-26T15:35:25.516+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://Ubuntu-Thibaut/jndi/rmi://Ubuntu-Thibaut:11086/Ubuntu-Thibaut/11076/jmxrmi
+|#]
+
+
+[#|2017-06-26T15:35:25.637+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2017-06-26T15:35:25.637+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2017-06-26T15:35:25.648+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2017-06-26T15:35:25.649+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2017-06-26T15:35:25.651+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2017-06-26T15:35:25.651+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2017-06-26T15:35:25.654+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2017-06-26T15:35:25.654+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2017-06-26T15:35:25.665+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1039]: Broker "imqbroker@Ubuntu-Thibaut:11076" ready.
+|#]
+
+
+[#|2017-06-26T15:35:26.395+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=http-thread-pool::http-listener-1(1);|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T15:45:26.418+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-26T15:45:26.448+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T15:47:49.855+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=164;_ThreadName=RMI TCP Connection(10)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  1, Count=1
+|#]
+
+
+[#|2017-06-26T15:47:49.869+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=164;_ThreadName=RMI TCP Connection(10)-127.0.0.1;|JMX Connection Close: jmxrmi, connection ID: rmi://127.0.0.1  1, Count=0
+|#]
+
+
+[#|2017-06-26T15:47:54.077+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=164;_ThreadName=RMI TCP Connection(10)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  2, Count=1
+|#]
+
+
+[#|2017-06-26T15:51:40.515+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=170;_ThreadName=RMI TCP Connection(16)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  3, Count=2
+|#]
+
+
+[#|2017-06-26T15:51:40.518+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=170;_ThreadName=RMI TCP Connection(16)-127.0.0.1;|JMX Connection Close: jmxrmi, connection ID: rmi://127.0.0.1  3, Count=1
+|#]
+
+
+[#|2017-06-26T15:51:42.679+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=170;_ThreadName=RMI TCP Connection(16)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  4, Count=2
+|#]
+
+
+[#|2017-06-26T16:00:26.416+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-26T16:00:26.478+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T16:04:50.382+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: admin@127.0.0.1:52380->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:04:50.425+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: admin@127.0.0.1:52380->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:07:48.116+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: admin@127.0.0.1:56344->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:07:48.165+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: admin@127.0.0.1:56344->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:10:26.416+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-26T16:10:26.454+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T16:20:26.417+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-26T16:20:26.497+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-26T16:23:41.170+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:44512->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:23:41.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:44512->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:23:41.609+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:44544->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:24:19.730+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=200;_ThreadName=RMI TCP Connection(60)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  5, Count=3
+|#]
+
+
+[#|2017-06-26T16:24:19.863+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=200;_ThreadName=RMI TCP Connection(60)-127.0.0.1;|JMX Connection Close: jmxrmi, connection ID: rmi://127.0.0.1  5, Count=2
+|#]
+
+
+[#|2017-06-26T16:24:23.053+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=200;_ThreadName=RMI TCP Connection(60)-127.0.0.1;|JMX Connection Open: jmxrmi, connection ID: rmi://127.0.0.1  6, Count=3
+|#]
+
+
+[#|2017-06-26T16:25:29.781+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:44544->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:25:30.674+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:48890->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:27:28.235+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:48890->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:27:30.435+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:52410->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:34:33.449+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:52410->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:34:35.427+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:37914->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:35:26.418+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:35:26.419+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:40:59.871+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:37914->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:41:01.481+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:50512->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:45:26.678+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:45:27.687+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:50:33.823+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:50512->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:50:59.391+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:38586->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T16:51:07.015+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:38586->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T16:51:08.534+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:38842->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:00:28.677+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:00:29.256+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:00:41.627+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:38842->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:00:45.065+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:59164->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:00:46.579+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:59164->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:00:47.381+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:59480->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:03:03.789+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:59480->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:03:04.646+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:40374->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:03:13.239+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:40374->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:03:14.382+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:41300->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:03:15.527+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:41300->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:03:16.432+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:41458->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:04:00.746+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:41458->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:04:01.449+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:44342->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:04:37.830+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:44342->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:04:38.633+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:46014->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:06:57.318+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:46014->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:06:59.874+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:34302->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:10:01.190+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:34302->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:10:03.108+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:40076->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:10:04.104+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:40076->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:10:04.615+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:40256->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:10:16.029+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=190;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:40256->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:10:16.679+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:41314->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:10:26.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:10:26.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:10:34.039+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:41314->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:10:34.651+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:42994->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:12:33.138+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:42994->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:12:33.592+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:48880->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:13:18.258+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:48880->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:13:18.776+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:52348->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:13:24.296+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:52348->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:13:24.742+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:52562->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-26T17:14:41.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:52562->jms:43131 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-26T17:14:41.867+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:54872->jms:43131. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:14:33.055+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2017-06-27T09:14:33.144+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 2-c)
+Compile:  March 17 2015 1045
+
+Copyright (c) 2013, Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_131 Oracle Corporation /home/kazadri/Documents/javatools/jdk1.8.0_131/jre
+|#]
+
+
+[#|2017-06-27T09:14:33.292+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|   IMQ_HOME=/home/kazadri/Documents/javatools/payara41/mq
+|#]
+
+
+[#|2017-06-27T09:14:33.292+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|IMQ_VARHOME=/home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq
+|#]
+
+
+[#|2017-06-27T09:14:33.293+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|Linux 4.8.0-54-generic amd64 Ubuntu-Thibaut (4 cpu) kazadri
+|#]
+
+
+[#|2017-06-27T09:14:33.296+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|Java Heap Size: max=466432k, current=327680k
+|#]
+
+
+[#|2017-06-27T09:14:33.296+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|Arguments: -port 11076 -name imqbroker -nobind -imqhome /home/kazadri/Documents/javatools/payara41/mq -varhome /home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq -libhome /home/kazadri/Documents/javatools/payara41/mq/lib -useRmiRegistry -rmiRegistryPort 11086 -save -silent
+|#]
+
+
+[#|2017-06-27T09:14:33.296+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2017-06-27T09:14:33.296+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=11076, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=11086, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2017-06-27T09:14:33.297+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|Embedded Broker 
+|#]
+
+
+[#|2017-06-27T09:14:33.365+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1522]: Create thread pool portmapper for (4, 4)(60s) service
+|#]
+
+
+[#|2017-06-27T09:14:33.436+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2017-06-27T09:14:33.437+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2017-06-27T09:14:33.483+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2017-06-27T09:14:33.484+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|Using built-in file-based persistent store: /home/kazadri/Documents/javatools/payara41/glassfish/domains/middle/imq/instances/imqbroker/
+|#]
+
+
+[#|2017-06-27T09:14:34.268+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2017-06-27T09:14:34.351+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|WARNING [B3168]: Invalid broker address for this broker to run in cluster: Loopback IP address is not allowed in broker address mq://127.0.1.1:11076/?instName=imqbroker&brokerSessionUID=980760972087607808&ha=false for cluster
+|#]
+
+
+[#|2017-06-27T09:14:34.352+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|WARNING [B1137]: Cluster initialization failed. Disabling the cluster service.
+|#]
+
+
+[#|2017-06-27T09:14:34.360+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2017-06-27T09:14:34.411+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|new transaction log enabled
+|#]
+
+
+[#|2017-06-27T09:14:34.411+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|sync writes to disk = false
+|#]
+
+
+[#|2017-06-27T09:14:34.424+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2017-06-27T09:14:34.425+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2017-06-27T09:14:34.426+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1392]: Opening transaction log with file mode rw, maximum size 10 485 760 bytes
+|#]
+
+
+[#|2017-06-27T09:14:34.461+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1270]: Processing messages from transaction log file...
+|#]
+
+
+[#|2017-06-27T09:14:34.462+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2017-06-27T09:14:34.464+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1503]: Retrieved 2 destinations from store
+|#]
+
+
+[#|2017-06-27T09:14:34.662+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1517]: Destroying destination physMessageQueue [Queue] 
+|#]
+
+
+[#|2017-06-27T09:14:34.663+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1151]: Loading destination physMessageQueue [Queue] with 0 messages
+|#]
+
+
+[#|2017-06-27T09:14:34.666+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1152]: Loading of destination physMessageQueue [Queue] complete
+|#]
+
+
+[#|2017-06-27T09:14:34.666+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1387]: Purged 0 messages from destination physMessageQueue [Queue]
+|#]
+
+
+[#|2017-06-27T09:14:34.823+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1159]: Destination physMessageQueue [Queue] has been destroyed
+|#]
+
+
+[#|2017-06-27T09:14:34.823+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1151]: Loading destination mq.sys.dmq [Queue] with 0 messages
+|#]
+
+
+[#|2017-06-27T09:14:34.824+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1152]: Loading of destination mq.sys.dmq [Queue] complete
+|#]
+
+
+[#|2017-06-27T09:14:34.864+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1132]: Auto-creating destination physMessageQueue [Queue] 
+|#]
+
+
+[#|2017-06-27T09:14:34.963+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 1-127.0.1.1(80:76:b8:a0:c2:88)-1-1498484126473 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.973+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 2-127.0.1.1(80:76:b8:a0:c2:88)-1-1498484828456 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.973+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 3-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485007008 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.974+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 4-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485007784 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.974+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 5-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485008576 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.975+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 6-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485009457 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.975+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 7-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485010268 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.976+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 8-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485011048 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.976+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 9-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485011827 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.977+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 10-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485012619 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.977+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 11-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485013409 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.978+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 12-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485014174 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.978+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 13-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485014998 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.979+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 14-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485015796 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.979+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 15-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485016633 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.980+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 16-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485017430 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.980+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 17-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485018206 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.980+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 18-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485018981 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.981+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 19-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485019762 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.981+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 20-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485020534 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.982+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 21-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485021326 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.982+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 22-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485022103 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.983+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 23-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485023102 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.983+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 24-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485023956 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.984+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 25-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485024775 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.984+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 26-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485025917 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.985+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 27-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485026704 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.985+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 28-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485027622 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.985+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 29-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485028401 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.986+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 30-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485029350 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.986+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 31-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485030204 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.987+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 32-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485031066 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.993+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 33-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485031873 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.993+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 34-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485032688 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.994+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 35-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485033467 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.994+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 36-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485034237 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.995+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 37-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485035007 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.996+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 38-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485035788 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.996+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 39-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485036594 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.997+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 40-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485037377 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.998+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 41-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485038247 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.998+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 42-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485039030 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.999+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 43-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485040010 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.999+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 44-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485040801 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:34.999+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 45-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485041598 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.000+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 46-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485042390 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.000+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 47-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485043229 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.001+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 48-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485044008 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.001+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 49-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485044784 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.001+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 50-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485045549 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.002+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 51-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485046333 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.002+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 52-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485047114 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.003+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 53-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485047883 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.003+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 54-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485048651 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.016+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 55-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485049487 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.017+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 56-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485050255 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.017+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 57-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485051025 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.018+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 58-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485051795 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.029+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 59-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485052564 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.030+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 60-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485053331 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.030+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 61-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485054102 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.031+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 62-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485054869 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.031+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 63-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485055735 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.032+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 64-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485056563 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.032+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 65-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485057332 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.033+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 66-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485058273 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.034+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 67-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485059044 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.034+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 68-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485059811 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.035+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 69-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485060596 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.035+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 70-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485061367 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.042+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 71-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485062130 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.043+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 72-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485062894 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.044+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 73-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485063665 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.044+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 74-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485064436 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.045+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 75-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485065214 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.046+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 76-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485065980 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.047+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 77-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485066751 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.049+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 78-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485067536 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.049+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 79-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485068387 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.050+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 80-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485069216 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.051+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 81-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485069993 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.051+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 82-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485070808 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.052+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 83-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485071576 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.058+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 84-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485072338 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.059+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 85-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485073162 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.060+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 86-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485073929 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.060+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 87-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485074694 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.061+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 88-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485075460 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.061+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 89-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485076228 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.062+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 90-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485076998 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.062+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 91-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485077777 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.063+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 92-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485078591 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.063+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 93-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485079380 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.064+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 94-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485080147 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.065+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 95-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485080912 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.065+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 96-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485081680 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.066+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 97-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485082459 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.066+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 98-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485083232 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.067+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 99-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485083994 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.068+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 100-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485084764 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.069+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 101-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485085537 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.069+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 102-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485086309 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.070+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 103-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485087089 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.070+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 104-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485087874 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.071+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 105-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485088664 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.079+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 3-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485007008
+|#]
+
+
+[#|2017-06-27T09:14:35.081+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1279]: Disregard state of interest [consumer:0, type=NONE] for already purged message 1-127.0.1.1(a8:15:c9:58:9e:d2)-1-1498482601499
+|#]
+
+
+[#|2017-06-27T09:14:35.081+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 1-127.0.1.1(80:76:b8:a0:c2:88)-1-1498484126473
+|#]
+
+
+[#|2017-06-27T09:14:35.081+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 2-127.0.1.1(80:76:b8:a0:c2:88)-1-1498484828456
+|#]
+
+
+[#|2017-06-27T09:14:35.082+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 4-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485007784
+|#]
+
+
+[#|2017-06-27T09:14:35.082+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 6-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485009457
+|#]
+
+
+[#|2017-06-27T09:14:35.083+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 5-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485008576
+|#]
+
+
+[#|2017-06-27T09:14:35.083+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 7-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485010268
+|#]
+
+
+[#|2017-06-27T09:14:35.083+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 12-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485014174
+|#]
+
+
+[#|2017-06-27T09:14:35.084+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 8-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485011048
+|#]
+
+
+[#|2017-06-27T09:14:35.084+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 11-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485013409
+|#]
+
+
+[#|2017-06-27T09:14:35.084+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 9-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485011827
+|#]
+
+
+[#|2017-06-27T09:14:35.085+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 10-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485012619
+|#]
+
+
+[#|2017-06-27T09:14:35.085+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 13-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485014998
+|#]
+
+
+[#|2017-06-27T09:14:35.085+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 14-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485015796
+|#]
+
+
+[#|2017-06-27T09:14:35.086+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 17-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485018206
+|#]
+
+
+[#|2017-06-27T09:14:35.086+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 16-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485017430
+|#]
+
+
+[#|2017-06-27T09:14:35.087+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 18-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485018981
+|#]
+
+
+[#|2017-06-27T09:14:35.087+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 19-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485019762
+|#]
+
+
+[#|2017-06-27T09:14:35.089+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 20-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485020534
+|#]
+
+
+[#|2017-06-27T09:14:35.090+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 15-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485016633
+|#]
+
+
+[#|2017-06-27T09:14:35.090+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 22-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485022103
+|#]
+
+
+[#|2017-06-27T09:14:35.091+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 21-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485021326
+|#]
+
+
+[#|2017-06-27T09:14:35.096+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 24-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485023956
+|#]
+
+
+[#|2017-06-27T09:14:35.097+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 23-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485023102
+|#]
+
+
+[#|2017-06-27T09:14:35.097+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 27-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485026704
+|#]
+
+
+[#|2017-06-27T09:14:35.098+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 25-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485024775
+|#]
+
+
+[#|2017-06-27T09:14:35.098+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 26-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485025917
+|#]
+
+
+[#|2017-06-27T09:14:35.098+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 31-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485030204
+|#]
+
+
+[#|2017-06-27T09:14:35.099+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 28-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485027622
+|#]
+
+
+[#|2017-06-27T09:14:35.099+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 29-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485028401
+|#]
+
+
+[#|2017-06-27T09:14:35.099+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 30-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485029350
+|#]
+
+
+[#|2017-06-27T09:14:35.099+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 32-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485031066
+|#]
+
+
+[#|2017-06-27T09:14:35.100+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 34-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485032688
+|#]
+
+
+[#|2017-06-27T09:14:35.100+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 33-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485031873
+|#]
+
+
+[#|2017-06-27T09:14:35.100+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 35-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485033467
+|#]
+
+
+[#|2017-06-27T09:14:35.101+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 38-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485035788
+|#]
+
+
+[#|2017-06-27T09:14:35.101+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 36-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485034237
+|#]
+
+
+[#|2017-06-27T09:14:35.101+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 37-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485035007
+|#]
+
+
+[#|2017-06-27T09:14:35.103+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 40-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485037377
+|#]
+
+
+[#|2017-06-27T09:14:35.105+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 42-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485039030
+|#]
+
+
+[#|2017-06-27T09:14:35.105+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 41-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485038247
+|#]
+
+
+[#|2017-06-27T09:14:35.107+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 39-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485036594
+|#]
+
+
+[#|2017-06-27T09:14:35.109+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 44-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485040801
+|#]
+
+
+[#|2017-06-27T09:14:35.110+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 47-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485043229
+|#]
+
+
+[#|2017-06-27T09:14:35.111+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 43-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485040010
+|#]
+
+
+[#|2017-06-27T09:14:35.112+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 46-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485042390
+|#]
+
+
+[#|2017-06-27T09:14:35.114+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 48-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485044008
+|#]
+
+
+[#|2017-06-27T09:14:35.114+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 51-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485046333
+|#]
+
+
+[#|2017-06-27T09:14:35.115+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 45-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485041598
+|#]
+
+
+[#|2017-06-27T09:14:35.116+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 50-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485045549
+|#]
+
+
+[#|2017-06-27T09:14:35.116+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 52-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485047114
+|#]
+
+
+[#|2017-06-27T09:14:35.117+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 53-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485047883
+|#]
+
+
+[#|2017-06-27T09:14:35.118+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 49-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485044784
+|#]
+
+
+[#|2017-06-27T09:14:35.120+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 55-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485049487
+|#]
+
+
+[#|2017-06-27T09:14:35.121+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 54-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485048651
+|#]
+
+
+[#|2017-06-27T09:14:35.122+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 58-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485051795
+|#]
+
+
+[#|2017-06-27T09:14:35.123+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 57-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485051025
+|#]
+
+
+[#|2017-06-27T09:14:35.123+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 59-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485052564
+|#]
+
+
+[#|2017-06-27T09:14:35.124+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 56-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485050255
+|#]
+
+
+[#|2017-06-27T09:14:35.124+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 61-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485054102
+|#]
+
+
+[#|2017-06-27T09:14:35.125+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 62-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485054869
+|#]
+
+
+[#|2017-06-27T09:14:35.125+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 60-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485053331
+|#]
+
+
+[#|2017-06-27T09:14:35.126+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 63-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485055735
+|#]
+
+
+[#|2017-06-27T09:14:35.126+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 66-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485058273
+|#]
+
+
+[#|2017-06-27T09:14:35.128+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 67-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485059044
+|#]
+
+
+[#|2017-06-27T09:14:35.129+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 68-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485059811
+|#]
+
+
+[#|2017-06-27T09:14:35.129+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 65-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485057332
+|#]
+
+
+[#|2017-06-27T09:14:35.130+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 64-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485056563
+|#]
+
+
+[#|2017-06-27T09:14:35.131+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 69-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485060596
+|#]
+
+
+[#|2017-06-27T09:14:35.132+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 72-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485062894
+|#]
+
+
+[#|2017-06-27T09:14:35.132+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 73-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485063665
+|#]
+
+
+[#|2017-06-27T09:14:35.133+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 70-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485061367
+|#]
+
+
+[#|2017-06-27T09:14:35.137+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 71-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485062130
+|#]
+
+
+[#|2017-06-27T09:14:35.139+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 74-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485064436
+|#]
+
+
+[#|2017-06-27T09:14:35.146+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 75-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485065214
+|#]
+
+
+[#|2017-06-27T09:14:35.149+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 76-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485065980
+|#]
+
+
+[#|2017-06-27T09:14:35.150+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 77-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485066751
+|#]
+
+
+[#|2017-06-27T09:14:35.151+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 80-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485069216
+|#]
+
+
+[#|2017-06-27T09:14:35.151+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 78-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485067536
+|#]
+
+
+[#|2017-06-27T09:14:35.152+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 82-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485070808
+|#]
+
+
+[#|2017-06-27T09:14:35.152+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 79-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485068387
+|#]
+
+
+[#|2017-06-27T09:14:35.153+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 81-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485069993
+|#]
+
+
+[#|2017-06-27T09:14:35.153+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 84-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485072338
+|#]
+
+
+[#|2017-06-27T09:14:35.153+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 83-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485071576
+|#]
+
+
+[#|2017-06-27T09:14:35.153+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 86-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485073929
+|#]
+
+
+[#|2017-06-27T09:14:35.153+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 87-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485074694
+|#]
+
+
+[#|2017-06-27T09:14:35.156+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 85-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485073162
+|#]
+
+
+[#|2017-06-27T09:14:35.157+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 88-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485075460
+|#]
+
+
+[#|2017-06-27T09:14:35.159+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 92-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485078591
+|#]
+
+
+[#|2017-06-27T09:14:35.159+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 93-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485079380
+|#]
+
+
+[#|2017-06-27T09:14:35.160+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 89-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485076228
+|#]
+
+
+[#|2017-06-27T09:14:35.160+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 91-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485077777
+|#]
+
+
+[#|2017-06-27T09:14:35.160+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 90-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485076998
+|#]
+
+
+[#|2017-06-27T09:14:35.161+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 94-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485080147
+|#]
+
+
+[#|2017-06-27T09:14:35.162+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 97-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485082459
+|#]
+
+
+[#|2017-06-27T09:14:35.162+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 95-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485080912
+|#]
+
+
+[#|2017-06-27T09:14:35.163+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 96-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485081680
+|#]
+
+
+[#|2017-06-27T09:14:35.172+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 99-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485083994
+|#]
+
+
+[#|2017-06-27T09:14:35.173+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 103-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485087089
+|#]
+
+
+[#|2017-06-27T09:14:35.173+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 98-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485083232
+|#]
+
+
+[#|2017-06-27T09:14:35.173+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 102-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485086309
+|#]
+
+
+[#|2017-06-27T09:14:35.173+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 104-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485087874
+|#]
+
+
+[#|2017-06-27T09:14:35.174+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 101-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485085537
+|#]
+
+
+[#|2017-06-27T09:14:35.174+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 100-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485084764
+|#]
+
+
+[#|2017-06-27T09:14:35.174+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 105-127.0.1.1(80:76:b8:a0:c2:88)-1-1498485088664
+|#]
+
+
+[#|2017-06-27T09:14:35.174+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 580-127.0.1.1(80:76:b8:a0:c2:88)-1-1498487409439 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.175+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 580-127.0.1.1(80:76:b8:a0:c2:88)-1-1498487409439
+|#]
+
+
+[#|2017-06-27T09:14:35.175+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 633-127.0.1.1(80:76:b8:a0:c2:88)-1-1498488707448 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.175+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 633-127.0.1.1(80:76:b8:a0:c2:88)-1-1498488707448
+|#]
+
+
+[#|2017-06-27T09:14:35.175+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 818-127.0.1.1(80:76:b8:a0:c2:88)-1-1498490052322 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.176+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 818-127.0.1.1(80:76:b8:a0:c2:88)-1-1498490052322
+|#]
+
+
+[#|2017-06-27T09:14:35.176+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1277]: Reconstruct message 835-127.0.1.1(80:76:b8:a0:c2:88)-1-1498490092586 for destination {2}
+|#]
+
+
+[#|2017-06-27T09:14:35.176+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1278]: Update state of interest [consumer:0, type=NONE] for message 835-127.0.1.1(80:76:b8:a0:c2:88)-1-1498490092586
+|#]
+
+
+[#|2017-06-27T09:14:35.220+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2017-06-27T09:14:35.221+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2017-06-27T09:14:35.303+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2017-06-27T09:14:35.350+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://Ubuntu-Thibaut/jndi/rmi://Ubuntu-Thibaut:11086/Ubuntu-Thibaut/11076/jmxrmi
+|#]
+
+
+[#|2017-06-27T09:14:35.614+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2017-06-27T09:14:35.615+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2017-06-27T09:14:35.637+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2017-06-27T09:14:35.637+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2017-06-27T09:14:35.646+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2017-06-27T09:14:35.646+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2017-06-27T09:14:35.648+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2017-06-27T09:14:35.649+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2017-06-27T09:14:35.678+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=JMS_PROXY_default_JMS_host-kernel(1) SelectorRunner;|[B1039]: Broker "imqbroker@Ubuntu-Thibaut:11076" ready.
+|#]
+
+
+[#|2017-06-27T09:14:36.187+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:41104->jms:37205. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-27T09:14:36.210+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:41104->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-27T09:14:36.771+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:41116->jms:37205. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-27T09:14:42.043+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:41116->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-27T09:14:45.028+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:41194->jms:37205. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-27T09:16:08.256+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:41194->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-27T09:16:09.306+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:41854->jms:37205. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-27T09:17:14.228+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=128;_ThreadName=http-thread-pool::http-listener-1(2);|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:27:14.875+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:27:15.269+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:27:23.173+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:41854->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:27:24.403+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:49628->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:27:25.073+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:49628->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:27:26.000+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:49640->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:27:31.611+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:49640->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:27:32.170+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:49692->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:31:44.898+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:49692->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:31:46.039+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:53614->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:34:35.781+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:53614->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:34:37.079+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:56216->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:34:38.106+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:56216->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:34:38.512+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:56250->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:34:51.058+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:56250->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:34:51.519+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:56796->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:37:14.876+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:37:14.904+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:39:12.030+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:56796->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:39:12.829+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:37772->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:40:23.577+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:37772->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:40:24.465+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:39412->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:43:10.293+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:39412->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:43:11.326+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:47752->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:43:28.680+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:47752->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:43:29.118+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:49126->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:44:03.321+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:49126->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:44:04.670+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:50796->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:45:01.168+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:50796->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:45:01.772+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:53926->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:45:04.959+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:53926->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:45:05.433+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:54144->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:45:41.533+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:54144->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:45:41.910+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:55834->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:45:45.416+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:55834->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:45:46.097+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:55920->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:45:51.175+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:55920->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:46:24.690+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:56810->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:47:14.875+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:47:14.961+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:47:46.867+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:56810->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:47:47.955+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:59052->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:48:16.028+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:59052->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:48:16.311+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:60018->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:48:30.770+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:60018->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:48:31.314+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:60612->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:49:13.226+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:60612->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:49:13.674+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:33750->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:49:44.370+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:33750->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:49:44.826+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:35288->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:49:55.619+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:35288->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:49:56.107+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:36082->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:49:57.444+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:36082->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:49:58.129+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:36204->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:50:40.224+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:36204->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:50:40.625+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:38584->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:51:03.504+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:38584->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:51:03.902+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:39910->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:51:13.883+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:39910->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:51:14.227+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:40392->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:55:08.711+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:40392->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:55:10.401+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:47482->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:55:36.603+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:47482->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:55:37.065+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:50016->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:55:42.636+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:50016->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:55:43.145+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:50382->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:56:46.343+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:50382->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:56:47.067+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:54212->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:57:15.904+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:57:16.389+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:54212->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=0
+|#]
+
+
+[#|2017-06-27T09:57:16.442+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=1
+|#]
+
+
+[#|2017-06-27T09:57:16.878+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:55768->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:57:34.654+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:55768->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:57:35.007+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:57018->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:58:41.758+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:57018->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:58:42.374+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:60254->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:58:57.415+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:60254->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:58:57.946+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60720->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:58:58.643+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60720->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:58:59.795+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60748->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:59:00.175+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60748->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:59:00.870+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60784->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:59:20.685+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60784->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:59:21.309+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:33562->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T09:59:29.367+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:33562->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T09:59:29.669+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:33988->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:01:48.822+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:33988->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:01:49.398+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:37780->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:02:01.598+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:37780->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:02:01.961+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:38586->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:02:10.218+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:38586->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:02:10.709+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:39094->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:05:07.521+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:39094->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:07:00.668+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:47184->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:07:00.714+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:47184->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:07:00.871+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:47198->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:07:14.977+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:07:14.978+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:08:46.475+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:47198->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:08:47.603+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:50098->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:10:16.044+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:50098->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:10:16.780+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:53388->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:11:12.065+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:53388->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:11:36.305+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:55928->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:11:42.492+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:55928->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:11:43.105+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:56272->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:12:46.968+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:56272->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:12:47.427+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:58456->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:12:55.940+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:58456->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:12:56.551+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:59090->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:13:04.668+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:59090->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:13:05.115+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:59442->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:13:27.095+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:59442->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:13:27.810+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:60312->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:13:30.847+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:60312->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:13:31.486+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:60466->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:14:10.176+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:60466->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:14:10.936+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:34034->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:17:14.930+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:17:15.010+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:18:33.281+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:34034->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:18:34.492+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:44156->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:19:02.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:44156->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:19:03.091+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:46042->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:19:17.749+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:46042->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:19:18.346+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:46922->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:21:00.169+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:46922->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:21:00.740+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:50110->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:21:30.161+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:50110->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:21:30.615+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:51580->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:22:03.907+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:51580->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:22:04.367+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:52744->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:25:44.270+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:52744->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:25:45.451+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:32996->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:26:04.412+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:32996->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:26:04.935+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:34124->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:28:55.321+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:34124->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:28:55.804+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:39022->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:31:30.691+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:39022->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:31:32.007+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:44256->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:37:14.951+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:37:15.119+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:42:36.153+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:44256->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:43:44.049+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:37760->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:45:25.365+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:37760->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:45:27.343+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:41946->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:47:14.959+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:47:15.315+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:48:19.180+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:41946->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:48:21.051+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:47814->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:49:24.148+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:47814->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:49:25.984+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:51128->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:49:34.508+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:51128->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:49:35.166+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:51604->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:50:37.340+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:51604->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:50:38.301+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:55006->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:51:04.247+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:55006->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:51:04.609+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:56634->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:51:12.703+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:56634->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:51:13.062+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:57372->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:55:03.675+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:57372->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:55:06.632+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:34668->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:55:23.706+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:34668->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:55:25.071+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:35898->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:56:26.653+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:35898->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:56:27.053+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:40390->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:56:59.569+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=141;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:40390->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:57:00.022+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:41708->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:57:15.391+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:57:15.623+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T10:58:47.063+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:41708->jms:37205 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T10:58:47.887+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:44898->jms:37205. Count: service=1 broker=2
+|#]
+
+
+[#|2017-06-27T11:07:15.014+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1066]:   Closing: guest@127.0.1.1:0->jmsdirect:0 because "[B0059]: Client closed the connection". Count: service=0 broker=1
+|#]
+
+
+[#|2017-06-27T11:07:15.637+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=176;_ThreadName=connector-timer-proxy;|[B1065]: Accepting: guest@127.0.1.1:0->jmsdirect:0. Count: service=1 broker=2
+|#]
+
+

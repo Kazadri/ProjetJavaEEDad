@@ -1,0 +1,13 @@
+/* AUTOMATICALLY GENERATED ON Mon Jun 26 09:37:38 CEST 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "RestMessageValidator", "process,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "SoapMessageValidator", "process,Local,java.lang.String";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "SoapMessageValidator", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "RestMessageValidator", "**";
+};
+

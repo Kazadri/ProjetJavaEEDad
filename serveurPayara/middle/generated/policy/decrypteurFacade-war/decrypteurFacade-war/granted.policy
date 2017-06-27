@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Tue Jun 27 09:14:13 CEST 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+  permission javax.security.jacc.WebRoleRefPermission "com.decrypteur.decrypteurmgmt.facade.ApplicationConfig", "**";
+};
+

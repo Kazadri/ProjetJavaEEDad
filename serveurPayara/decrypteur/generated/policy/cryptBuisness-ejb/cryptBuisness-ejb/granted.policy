@@ -1,0 +1,7 @@
+/* AUTOMATICALLY GENERATED ON Tue Jun 27 10:58:47 CEST 2017*/
+/* DO NOT EDIT */
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "MessageProcessor", "**";
+};
+

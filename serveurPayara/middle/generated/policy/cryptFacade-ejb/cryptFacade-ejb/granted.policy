@@ -1,0 +1,12 @@
+/* AUTOMATICALLY GENERATED ON Tue Jun 27 10:40:29 CEST 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "MessagingServiceBean", "verification,Remote,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "MessagingServiceBean", "verification,ServiceEndpoint,java.lang.String";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "MessagingServiceBean", "**";
+};
+

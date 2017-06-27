@@ -1,0 +1,12 @@
+/* AUTOMATICALLY GENERATED ON Fri Jun 23 11:55:47 CEST 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "DecrypteurServiceBean", "decrypt,ServiceEndpoint,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "DecrypteurServiceBean", "decrypt,Remote,java.lang.String";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "DecrypteurServiceBean", "**";
+};
+
