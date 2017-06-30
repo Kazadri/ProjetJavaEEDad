@@ -28,7 +28,7 @@ public class File implements Serializable {
     private String email;
     
     @Column(name="match")
-    private String match;
+    private Double match;
 
     /**
      * @return the id
@@ -103,14 +103,14 @@ public class File implements Serializable {
     /**
      * @return the match
      */
-    public String getMatch() {
+    public Double getMatch() {
         return match;
     }
 
     /**
      * @param match the match to set
      */
-    public void setMatch(String match) {
+    public void setMatch(Double match) {
         this.match = match;
     }
     

@@ -5,8 +5,11 @@
  */
 package com.crypt.messagemgmt.logic;
 
+import com.crypt.messagemgmt.integration.FileDAO;
 import com.crypt.messagemgmt.integration.IJmsBridge;
 import com.crypt.messagemgmt.integration.JmsBridge;
+import com.crypt.messagemgmt.model.FileJson;
+import com.crypt.messagemgmt.model.File;
 import com.crypt.messagemgmt.model.MessageDecrypt;
 import java.io.*;
 import com.crypt.messagemgmt.model.mot;
@@ -18,6 +21,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
+import javax.inject.Inject;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
@@ -55,6 +59,9 @@ public class MessageProcessor implements MessageListener {
     private int countMsg = 0;
     private int seuil = 50;
     private String email = "";
+    
+    @Inject
+    FileDAO FileDAO;
     
     @Override
     public void onMessage(Message message) {
@@ -139,7 +146,7 @@ public class MessageProcessor implements MessageListener {
                     
                     
                     if(pourc > seuil){ 
-                        if(m.getKey().equals("aaaaah")){
+                      
                         Pattern pattern = Pattern.compile("([a-z0-9_.-]+)@([a-z0-9_.-]+[a-z])");
                         Matcher matcher = pattern.matcher(m.getsMessage());
 
@@ -149,7 +156,9 @@ public class MessageProcessor implements MessageListener {
                         }
                         bridge.stopDeciphering(m.getsMessage(), m.getnFichier(), m.getKey(), email, pourc);
                         System.out.println("STOP *****************" + m.getsMessage() + " | " + m.getnFichier()+ " | " + m.getKey()+ " | " +email + " | " + pourc);
-                    }
+                        
+                        createFile(m.getnFichier(), m.getKey(), email, pourc);
+                    
                    }
                      
                     
@@ -166,6 +175,34 @@ public class MessageProcessor implements MessageListener {
         } catch (JMSException ex) {
             Logger.getLogger(MessageProcessor.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    public FileJson createFile(String nameFile, String key, String email, Double match) {
+ 
+           File f = new File();
+           f.setNameFile(nameFile);
+           f.setFirstsWords("les premiers mots");
+           f.setKey(key);
+           f.setEmail(email);
+           f.setMatch(match);
+           File file = FileDAO.insert(f);
+           FileJson filejson = parseJson(file);
+           System.out.println("sauvegarde du nouveau fichier");
+           
+           return filejson;
+        
+    }
+    
+    
+    public FileJson parseJson(File file) {
+        FileJson JsonFile = new FileJson();
+        JsonFile.setId(file.getId());
+        JsonFile.setNameFile(file.getNameFile());
+        JsonFile.setFirstsWords(file.getFirstsWords());
+        JsonFile.setKey(file.getKey());
+        JsonFile.setEmail(file.getEmail());
+        JsonFile.setMatch(file.getMatch().toString());
+        return JsonFile;
     }
     
 }
