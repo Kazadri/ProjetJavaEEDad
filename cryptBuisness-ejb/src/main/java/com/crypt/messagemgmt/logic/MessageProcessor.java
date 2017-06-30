@@ -5,6 +5,8 @@
  */
 package com.crypt.messagemgmt.logic;
 
+import com.crypt.messagemgmt.integration.IJmsBridge;
+import com.crypt.messagemgmt.integration.JmsBridge;
 import com.crypt.messagemgmt.model.MessageDecrypt;
 import java.io.*;
 import com.crypt.messagemgmt.model.mot;
@@ -12,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
 import javax.jms.JMSException;
@@ -29,6 +33,7 @@ import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.ws.WebServiceRef;
 
 /**
  *
@@ -44,8 +49,16 @@ public class MessageProcessor implements MessageListener {
     public MessageProcessor() {
     }
     
+    @WebServiceRef(JmsBridge.class)
+    private IJmsBridge bridge;
+    
+    private int countMsg = 0;
+    private int seuil = 50;
+    private String email = "";
+    
     @Override
     public void onMessage(Message message) {
+        countMsg++;
         try {
             /**
              * 
@@ -69,7 +82,7 @@ public class MessageProcessor implements MessageListener {
                  **/
 
                 Client client = ClientBuilder.newClient();
-                WebTarget target = client.target("http://10.162.129.17:11080/dictionaryFacade-war/api/dictionary/words");
+                WebTarget target = client.target("http://10.162.129.17:30080/dictionaryFacade-war/api/dictionary/words");
                 Response resp = target.request().accept(MediaType.APPLICATION_JSON_TYPE).get();
                 List<mot> mots = new ArrayList<>();
                 String jsonContent = resp.readEntity(String.class);
@@ -109,16 +122,40 @@ public class MessageProcessor implements MessageListener {
                         }
                     }
                     Double pourc = Math.floor(((double)count / (double)dividedMessage.length) * 100);
+                   
                     System.out.println(count);
                     System.out.println(pourc+"%");
+                    
+                    
                     /**
                      * Sortie :
                      * - Information secrete (adresser mail)
                      * - nom du fichier
                      * - truc déchiffrer
                      * - clé
+                     * - %
                      */
-                }
+                    
+                    
+                    
+                    if(pourc > seuil){ 
+                        if(m.getKey().equals("aaaaah")){
+                        Pattern pattern = Pattern.compile("([a-z0-9_.-]+)@([a-z0-9_.-]+[a-z])");
+                        Matcher matcher = pattern.matcher(m.getsMessage());
+
+                        while(matcher.find()){
+                            System.out.println(matcher.group(0));
+                            email = matcher.group(0);
+                        }
+                        bridge.stopDeciphering(m.getsMessage(), m.getnFichier(), m.getKey(), email, pourc);
+                        System.out.println("STOP *****************" + m.getsMessage() + " | " + m.getnFichier()+ " | " + m.getKey()+ " | " +email + " | " + pourc);
+                    }
+                   }
+                     
+                    
+                    System.out.println("KEY *** "+ count + "*** -> " + m.getKey() );
+                   
+                } 
                           
             resp.close();
             client.close();

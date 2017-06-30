@@ -17,7 +17,7 @@
     <repositories>
         <repository>
             <id>localrepo</id>
-            <url>file:///home/kazadri/.m2/repository</url>
+            <url>file:///home/imtek/.m2/repository</url>
         </repository>
     </repositories>
     

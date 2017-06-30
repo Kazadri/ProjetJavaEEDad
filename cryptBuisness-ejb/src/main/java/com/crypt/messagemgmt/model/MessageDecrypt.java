@@ -15,7 +15,16 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 public class MessageDecrypt implements Serializable {
-    private String sMessage;
+   private String sMessage;
+    private String nFichier;
+    private String key;
+    
+    /*
+    **
+    ** nom du fichier
+    ** clé utilisé
+    **
+    */
 
     public String getsMessage() {
         return sMessage;
@@ -24,6 +33,32 @@ public class MessageDecrypt implements Serializable {
     public void setsMessage(String sMessage) {
         this.sMessage = sMessage;
     }
-    
-    
+
+    /**
+     * @return the nFichier
+     */
+    public String getnFichier() {
+        return nFichier;
+    }
+
+    /**
+     * @param nFichier the nFichier to set
+     */
+    public void setnFichier(String nFichier) {
+        this.nFichier = nFichier;
+    }
+
+    /**
+     * @return the key
+     */
+    public String getKey() {
+        return key;
+    }
+
+    /**
+     * @param key the key to set
+     */
+    public void setKey(String key) {
+        this.key = key;
+    }
 }

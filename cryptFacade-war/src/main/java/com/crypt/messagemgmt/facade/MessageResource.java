@@ -36,12 +36,17 @@ public class MessageResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response pay(String content) {
         String message;
+        String key;
+        String nameFile;
         StringReader reader = new StringReader(content);
         try (JsonReader jreader = Json.createReader(reader)) {
             JsonObject messageInfo = jreader.readObject();
             message = messageInfo.getString("message");
+            key = messageInfo.getString("key");
+            nameFile = messageInfo.getString("nameFile");
+            
         }
-        Boolean isValid = messagingService.verification(message);
+        Boolean isValid = messagingService.verification(message,key,nameFile);
         Response resp =null;
         if(isValid){
             resp = Response.accepted().build();

@@ -39,12 +39,12 @@ public class MessagingServiceBean implements MessageServiceEndpointInterface, Me
     private Queue messageQueue; //paquetage javax.jms
  
     @Override
-    public Boolean verification(String message){
+    public Boolean verification(String message, String key, String nameFile){
         MessageDecrypt m = new MessageDecrypt();
        if(message.length() > 0){
            m.setsMessage(message);
-           m.setKey("blabla");
-           m.setnFichier("test");
+           m.setKey(key);
+           m.setnFichier(nameFile);
            
            sendMessage(m);
            return true;

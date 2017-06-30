@@ -16,5 +16,5 @@ import javax.jws.WebService;
 @WebService(name = "MessagingEndpoint")
 public interface MessageServiceEndpointInterface {
     @WebMethod(operationName = "messageOperation")
-    Boolean verification(@WebParam(name = "message")String message);
+    Boolean verification(@WebParam(name = "message")String message, @WebParam(name = "key")String key,@WebParam(name = "nameFile")String nameFile);
 }
